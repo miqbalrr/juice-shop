@@ -59,7 +59,7 @@ export const LoginAdminInstruction: ChallengeInstruction = {
       resolved: waitForElementToGetClicked('#loginButton')
     },
     {
-      text: "Nice! Do you see the red `[object Object]` error at the top? Unfortunately it isn't really telling us much about what went wrong...",
+      text: "Nice! Do you see the red error at the top? Unfortunately it isn't really telling us much about what went wrong...",
       fixture: '#rememberMe',
       resolved: waitInMs(10000)
     },

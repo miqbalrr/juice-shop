@@ -131,7 +131,7 @@ export class LoginComponent implements OnInit {
         localStorage.removeItem('token')
         this.cookieService.remove('token')
         sessionStorage.removeItem('bid')
-        this.error.set(error)
+        this.error.set(typeof error === 'string' ? error : 'Login failed. Please try again.')
         this.userService.isLoggedIn.next(false)
         this.loginForm.email().reset()
         this.loginForm.password().reset()
